@@ -1,64 +1,30 @@
-# HR-TOOL
+# Resume Ranking Tool for HR & Recruiters
 
-## Overview
-This project is an AI-based resume screening system that allows HR professionals to upload resumes and extract relevant information.
+## 🔍 Overview
+The **Resume Ranking Tool** is a web-based application that helps HR professionals and recruiters efficiently analyze and rank resumes based on a given job description. By leveraging **Natural Language Processing (NLP)** and **TF-IDF similarity scoring**, the tool ranks resumes based on their relevance to the job description.
 
-**HR Professionals** can upload multiple resumes, filter candidates based on specific criteria (experience, skills, certification, etc.), and download the shortlisted candidates.
+## 🚀 Features
+- Upload multiple PDF resumes
+- Extracts text, names, and emails from resumes
+- Uses **TF-IDF** and **cosine similarity** for ranking
+- Displays ranked resumes with similarity scores
+- Download results as a CSV file
 
-## Features
-  **Bulk Resume Upload (HR Mode)**:
-  - Allows multiple resume uploads at once.
-  - Provides filtering based on experience, skills, and certifications.
-  - Shortlists candidates and allows downloading the filtered results.
-- **Feedback & Job Suggestion System**
-  - HR can provide feedback on resumes.
-  - HR can suggest jobs for candidates.
+## 🛠️ Tech Stack & Tools Used
+### **Backend:**
+- **Flask** - Web framework to build the application
+- **spaCy** - NLP library for extracting entities
+- **PyPDF2** - Extracts text from PDF resumes
+- **Scikit-learn** - Used for **TF-IDF vectorization** and **cosine similarity**
+- **Regular Expressions (re)** - Extracts emails and names from resumes
+- **CSV Module** - Saves ranked resume results
 
-## Installation & Requirements
-### Prerequisites
-Ensure you have the following installed:
-- Python 3.12.5
-- Flask
-- Pandas
-- NLTK
-- PyPDF2
-- Docx2txt
-- Sklearn
+### **Frontend:**
+- **HTML & CSS** - For rendering the web UI
+- **Jinja2 (Flask Template Engine)** - Dynamic content rendering
 
-### Installation Steps
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/Raghava44u/HR-Tool.git
-   cd HR-Tool
-   ```
-2. Install dependencies:
-   ```sh
-   pip install -r requirements.txt
-   ```
-3. Run the Flask application:
-   ```sh
-   python app.py
-   ```
-4. Open your browser and go to:
-   ```
-   http://127.0.0.1:5000
-   ```
-
-## How to Use
-1. When you launch the application, it will ask to upload Resumes (**HR**).
-
-2. **HR Mode**:
-   - Upload multiple resumes at once.
-   - Use the filtering options (skills, experience, certifications, etc.) to shortlist candidates.
-   - Download the list of shortlisted candidates.
-
-## Future Enhancements
-- Implement AI-based scoring for resumes.
-- Add more filtering options for HR professionals.
-- Improve UI/UX for better user experience.
-
-## Contribution
-Feel free to contribute by creating a pull request or raising an issue.
-
-**@Raghava4u**
-
+## 📂 Installation & Setup
+### **1️⃣ Clone the Repository**
+```bash
+git clone https://github.com/yourusername/resume-ranking-tool.git
+cd resume-ranking-tool
